@@ -1,7 +1,7 @@
 const paragraph = document.getElementById("myParagraph");
 const paragraphText = paragraph.textContent
   .toLowerCase()
-  .replaceAll(/,|\.|;|:|\\n/g, "");
+  .replaceAll(/[,\.;:]/g, "");
 
 // filter empty strings
 const paragraphWords = paragraphText.split(" ").filter((n) => n !== "");
