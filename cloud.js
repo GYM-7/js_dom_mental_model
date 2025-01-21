@@ -2,11 +2,6 @@ const paragraph = document.getElementById("myParagraph");
 const paragraphText = paragraph.textContent
   .toLowerCase()
   .replaceAll(/[,\.;:\\n]/g, "");
-//   .replaceAll(",", "")
-//   .replaceAll(".", "")
-//   .replaceAll(";", "")
-//   .replaceAll(":", "")
-//   .replaceAll("\n", "");
 
 // filter empty strings
 const paragraphWords = paragraphText.split(" ").filter((n) => n !== "");
