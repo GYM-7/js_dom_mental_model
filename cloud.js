@@ -52,6 +52,10 @@ highestTwelve.forEach((word, index) => {
   const randomColor = Math.trunc(Math.random() * colorsCollection.length);
   pElement.style.color = colorsCollection[randomColor];
 
+  // give a random order
+  const randomOrder = Math.trunc(Math.random() * 13);
+  pElement.style.order = randomOrder;
+
   // add the word as text content
   pElement.textContent = word;
 
